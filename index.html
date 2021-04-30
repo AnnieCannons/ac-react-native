@@ -34,28 +34,33 @@
 
 			<section>
 				<h2>Lecture 1:</h2>
-				<p>React Native Fundamentals</p>
+				<p>Understanding the Mobile Landscape</p>
 				<img src="images/react-native-logo.jpg" alt="React Native Logo">
 			</section>
 
 			<section>
 				<h2>So you want to build a mobile app...</h2>
-				<img src="https://media.giphy.com/media/HPCbzXUw1g37O/giphy.gif" alt="pondering">
+				<img src="images/giphy.gif" alt="pondering">
 			</section>
 
 			<section>
 				<h2>Traditional Mobile App Development</h2>
-				<img src="images/applegoogle.jpg" alt="Apple vs Google">
+				<img src="images/rn-how-work-2.png" alt="Apple vs Google">
+			</section>
+
+			<section>
+				<h2>Mobile Landscape</h2>
+				<img src="images/mobile-pwa.png" alt="Mobile PWA">
 			</section>
 
 			<section>
 				<h2>Learn once build anywhere</h2>
 				<p>The benefit of React Native is that if you understand how to build a React Native app for iOS, you understand how to build a React Native app for Android. </p>
-				<img src="images/goals.png" alt="React Native Goals" width="300px"> 
+				<img src="images/rn-how-work-3.png" alt="React Native Goals" width="300px"> 
 			</section>
 
 			<section>
-				<h2>Hybrid Apps</h2>
+				<h2>Understanding all different types of apps</h2>
 				<p>Let's go through <a href="http://altitudelabs.com/blog/react-native-mobile-app-development/">this article</a></p>
 			</section>
 
@@ -65,25 +70,95 @@
 			</section>
 
 			<section>
-				<h2>What's the same between React and React Native?</h2>
+				<h2>AnnieCannons Mobile Technologies</h2>
+				<p>Learn more <a href="https://drive.google.com/file/d/1q776bPcX1ittBtRI-e0dQKtSjm5XhmZ4/view?usp=sharing">here</a></p>
+			</section>
+
+			<section>
+				<h2>AnnieCannons Mobile Technologies</h2>
 				<ul>
-					<li class="fragment">State</li>
-					<li class="fragment">Props</li>
-					<li class="fragment">Virtual DOM</li>
+					<li>Progressive Web Application: <a href="https://app.ayacontigo.org/">Aya Contigo</a></li>
+					<li>Native Mobile Application: <a href="https://apps.apple.com/us/app/chani-app/id1532791252">CHANI</a></li>
+					<li>React Native Application: <a href="https://easytro.anniecannons.com/">EasyTRO</a></li>
 				</ul>
 			</section>
 
 			<section>
-				<h2>Maps and Props</h2>
-				<p>Same as React, you only have to change the component names and import them from 'react-native'</p>
-				<img src="images/maps.png" alt="Scrollview">
+				<h2>How are React.js and React Native similar?</h2>
+				<ul>
+					<li class="fragment">JavaScript!</li>
+					<li class="fragment">Components!</li>
+					<li class="fragment">State!</li>
+					<li class="fragment">Chrome Dev Tools!</li>
+					<li class="fragment">File Structure!</li>
+					<li class="fragment">API calls!</li>
+					<li class="fragment">IDE (Visual Studio Code)!</li>
+				</ul>
 			</section>
 
 			<section>
-				<h2>Components are the same</h2>
+				<h2>How are React.js and React Native different?</h2>
+				<ul>
+					<li class="fragment">JSX vs Built-In Components!</li>
+					<li class="fragment">Styling!</li>
+					<li class="fragment">Navigation!</li>
+					<li class="fragment">Deployment/Dev Testing!</li>
+					<li class="fragment">Native Modules!</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Setting up a Project</h2>
+				<p>Using <a href="https://kadikraman.github.io/react-native-v2/the-expo-debate">Expo</a></p>
+				<p><a href="https://reactnative.dev/docs/environment-setup">React Native Documentation</a></p>
+				<p>When installing globally, you will likely need to use 'sudo'</p>
+				<p>You can select the blank template.</p>
+				<p>Install Expo Client from the App Store</p>
+				<p>Scanning the QR code to see the Hello World App (same wifi network)</p>
+			</section>
+
+			<section>
+				<h2>Folder Structure</h2>
+				<ul>
+					<li class="fragment"><span style="color:yellow">node_modules</span> and package.json and package.lock</li>
+					<li class="fragment"><span style="color:yellow">/.expo-shared</span> - this is an expo internal folder</li>
+					<li class="fragment"><span style="color:yellow">/assets</span> - this is where we store any assets we may want to use in our application, like images, videos, fonts and icons</li>
+					<li class="fragment"><span style="color:yellow">.gitignore</span> - this is a file to tell .git which files and directories we want to omit from course control. node_modules is listed there</li>
+					<li class="fragment"><span style="color:yellow">app.json</span> - another config file, mostly for expo metadata</li>
+					<li class="fragment"><span style="color:yellow">babel.config.js</span> - babel config, used to add the expo preset</li>
+					<li class="fragment"><span style="color:yellow">App.js</span></li>
+					<li class="fragment">Create the src folder</li>
+				</ul>
+			</section>
+
+			<section>	
+				<h2>Debugging</h2>
+				<p>You can still use console.log()</p>
+				<p>Shake your device to see the debug and reload tools.</p>
+				<img src="images/tenor.gif" alt="Little Girl Dancing">
+			</section>
+
+
+			<!------------- Lecture 2 --------------->
+
+			<section>
+				<h2>Lecture 2:</h2>
+				<p>React Native Fundamentals</p>
+				<img src="images/react-native-logo.jpg" alt="React Native Logo">
+			</section>
+
+			<section>
+				<h2>Components</h2>
+				<p class="fragment">React Native, like React,js, is component-based.</p>
+				<p class="fragment">You can use both functional components and class components in React Native, just like React.js </p>
+				<p class="fragment">However, React Native does not create HTML with the help of JSX. Instead, we will need to use React Native Components.</p>
+			</section>
+
+			<section>
+				<h2>Developing Class Components</h2>
 				<p>In React</p>
-<pre><code class="javascript">import React from 'react';
-class HelloWorldApp extends React.Component{
+<pre><code class="javascript">import React, { Component } from 'react';
+class HelloWorldApp extends React {
   render(){
     return (
       &lt;h1&gt;Hello World&lt;/h1&gt;
@@ -92,7 +167,8 @@ class HelloWorldApp extends React.Component{
 }
 </code></pre>
 				<p>becomes....</p>
-<pre><code class="javascript">import React, { Component } from 'react';
+<pre><code class="javascript">
+import React, { Component } from 'react';
 import {Text} from 'react-native';
 class HelloWorldApp extends Component{
   render(){
@@ -100,6 +176,31 @@ class HelloWorldApp extends Component{
       &lt;Text&gt;Hello World&lt;/Text&gt;
     )
   }
+}
+</code></pre>
+			</section>
+
+			<section>
+				<h2>Developing Functional Components</h2>
+				<p>In React</p>
+<pre><code class="javascript">
+import React, { Component } from 'react';
+
+export default function App() {
+    return (
+      &lt;h1&gt;Hello World&lt;/h1&gt;
+    )
+}
+</code></pre>
+				<p>becomes....</p>
+<pre><code class="javascript">
+import React, { Component } from 'react';
+import { Text } from 'react-native';
+
+export default function App(){
+    return (
+      &lt;Text&gt;Hello World&lt;/Text&gt;
+    )
 }
 </code></pre>
 			</section>
@@ -120,27 +221,27 @@ class HelloWorldApp extends Component{
 			</section>
 
 			<section>
-				<h2>Launching your app</h2>
-				<p>In React</p>
-<pre><code class="javascript">ReactDOM.render(&lt;HelloNameComponent&gt;, 
-	document.getElementsById('app'));
-</code></pre>
-				<p>becomes....</p>
-<pre><code class="javascript">AppRegistry.registerComponent('HelloWorldApp',
-	() => HelloWorldApp);
-</code></pre>
-			</section>
-
-			<section>
 				<h2>Other Element Changes</h2>
 				<p>Docs <a href="https://facebook.github.io/react-native/docs/components-and-apis.html">here</a></p>
 			</section>
 
 			<section>
-				<h2>CSS</h2>
-				<p>Stylesheet</p>
+				<h2>Assignment: Basic Component</h2>
+				<p>Create the following:</p> <img src="images/exercise.png"/>
+			</section>
+
+			<section>
+				<h2>Styling in React Native</h2>
+				<p class="fragment">CSS - Yes</p>
+				<p class="fragment">Cascading? - No</p>
+				<p class="fragment">We use a StyleSheet from react-native to create the styles. The styling you add will only apply to that component.</p>
+				<img class="fragment" src="images/waterfalls.gif" alt="Waterfalls">
+			</section>
+
+			<section>
+				<h2>Stylesheet</h2>
 				<p class="fragment">All components have a style prop that accepts a JavaScript object.</p>
-				<p class="fragment">You can use Stylesheet.create() to create a more compoent style sheet object that you can reference in your components.</p>
+				<p class="fragment">You can use Stylesheet.create() to create a variable that is used to style your components.</p>
 			</section>
 
 			<section>
@@ -149,14 +250,21 @@ class HelloWorldApp extends Component{
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
+const styles = StyleSheet.create({
+ red: {
+  padding: 10,
+ },
+ medium: {
+  fontSize: '12px'
+ }
+});
+
 class LotsOfStyles extends Component {
   render() {
     return (
       &lt;View&gt;
        &lt;Text style={styles.red}&gt;just red&lt;/Text&gt;
-       &lt;Text style={styles.bigblue}&gt;just bigblue&lt;/Text&gt; 
-       &lt;Text style={[styles.bigblue, styles.red]}&gt;bigblue, then red&lt;/Text&gt;
-       &lt;Text style={[styles.red, styles.bigblue]}&gt;red, then bigblue&lt;/Text&gt;
+       &lt;Text style={[styles.medium, styles.red]}&gt;medium and red&lt;/Text&gt;
       &lt;/View&gt;
     );
   }
@@ -166,9 +274,10 @@ class LotsOfStyles extends Component {
 
 			<section>
 					<h2>Example</h2>
+					<p>Styles have to be written in JS syntax</p>
 	<pre><code>	
 const styles = StyleSheet.create({
-  bigblue: {
+  blue: {
     color: 'blue',
     fontWeight: 'bold',
     fontSize: 30,
@@ -181,12 +290,143 @@ const styles = StyleSheet.create({
 				</section>
 
 				<section>
-					<h2>Flexbox</h2>
-					<p class="fragment">Mobile viewports have fixed dimensions</p>
-					<p class="fragment">React Native allows you to use flexbox to layout components, just like on the web.</p>
-					<p class="fragment">BUT the defaults are different, ie flexDirection is defaulted to column and alignItems is defaulted to stretch instead of flex-start.</p>
-					<a class="fragment" href="https://medium.com/the-react-native-log/understanding-react-native-flexbox-layout-7a528200afd4">More here</a>
+					<h2>Assignment</h2>
+					<p>Add styling to each one of the elements in your App component.</p>
 				</section>
+				
+				<section>
+					<h2>Layout - Flexbox</h2>
+					<ul>
+					<li class="fragment">Mobile viewports have fixed dimensions</li>
+					<li class="fragment">In React Native, all positioning is done using FlexBox and all elements have display: flex applied by default.</li>
+					<li class="fragment">React Native allows you to use flexbox to layout components, just like on the web.</li>
+					<li class="fragment">BUT it is required and the defaults are different, ie flexDirection is defaulted to column and alignItems is defaulted to stretch instead of flex-start.</li>
+					<li class="fragment"><a  href="https://medium.com/the-react-native-log/understanding-react-native-flexbox-layout-7a528200afd4">More here</a></li>
+				</ul>
+				</section>
+
+				<section>
+					<h2>Flexbox</h2>
+					<p>This will center the items in the middle of the screen.</p>
+<pre><code>	
+const styles = StyleSheet.create({
+ container: {
+  flex: 1,
+  justifyContent: 'center',
+ },
+});
+</code></pre>
+				<p>Understanding flex <a href="https://reactnative.dev/docs/flexbox">here</a></p>
+				</section>
+
+				<section>	
+					<h2>Props</h2>
+					<p>Very much the same as React.js</p>
+<pre><code>	
+//Colorbox.js
+import React from 'react';
+import { View, Text, StyleSheet } from 'react-native';
+
+const ColorBox = props => {
+ return (
+  &lt;View&gt;
+   &lt;Text&gt;
+    {props.colorName} {props.hexCode}
+   &lt;/Text&gt;
+  &lt;/View&gt;
+ );
+};
+</code></pre>
+
+<pre><code>
+//Home.js
+&lt;ColorBox hexCode="#2aa198" colorName="Cyan" /&gt;
+</code></pre>
+
+				</section>
+
+				<section>
+					<h2>Lists</h2>
+					<p>Want to use a map to create a list of components or strings? Sadly, no.</p>
+					<p class="fragment">While we use .map() on the web, in React Native you should avoid using map in the render. This is because mapping over an array is not optimized. React Native will attempt to render every single element in the array all at once, regardless of whether they are visible on the screen or not.</p>
+				</section>
+
+				<section>
+					<h2>Props for Lists</h2>
+					<ul>
+						<li><span style="color:yellow">data</span> - this is the array of data you want to map over</li>
+						<li><span style="color:yellow">renderItem</span> - this is a function that is passed the item and its index and will return the individual item component</li>
+						<li><span style="color:yellow">keyExtractor</span> - this is a function that gets passed an item and its index</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>List Example</h2>
+					<p>Parent Component</p>
+<pre><code>
+//Home.js
+import React from 'react';
+import { View, Text, StyleSheet, FlatList } from 'react-native';
+import ColorBox from './components/ColorBox';
+
+const COLORS = [
+  { colorName: 'red' },
+  { colorName: 'green' },
+  { colorName: 'blue' },
+  { colorName: 'yellow'},
+  { colorName: 'purple' },
+];
+const App = () => {
+return (
+ &lt;View&gt;
+  &lt;FlatList
+   data={COLORS}
+   keyExtractor={item => item.colorName}
+   renderItem={({ item }) => ( &lt;ColorBox colorName={item.colorName} /&gt;)}
+  /&gt;
+ &lt;/View&gt;
+);
+const styles = StyleSheet.create({
+ fontWeight: 'bold',
+ marginBottom: 10,
+});
+
+export default App;
+</code></pre>
+				</section>
+
+				<section>	
+					<h2>List Example</h2>
+					<p>Child Component</p>
+<pre><code>
+import React from 'react';
+import { View, Text, StyleSheet } from 'react-native';
+
+const ColorBox = props => {
+ return (
+  &lt;View&gt;
+   &lt;Text&gt;{props.colorName}&lt;/Text&gt;
+  &lt;/View&gt;
+ );
+}
+
+export default ColorBox;
+</code></pre>
+							<p>More docs <a href="https://reactnative.dev/docs/using-a-listview">here</a></p>
+				</section>
+
+				<section>
+					<h2>List Exercise</h2>
+					<p>Create the following FlatList. You can use whichever colors you would like.</p>
+					<img src="images/list.png" alt="Vegetable List">
+				</section>
+
+
+
+
+				<!--------- LEFT OFF HERE ---------->
+
+
 
 				<section>
 					<h2>Creating a React Native App</h2>
@@ -199,25 +439,7 @@ const styles = StyleSheet.create({
 					</ol>
 				</section>
 
-				<section>
-					<h2>Creating a new application</h2>
-					<p>Change directories into the folder you want and enter the following command:</p>
-					<br>
-<pre><code>npx react-native init name-of-project</code></pre>				
-				</section>
 
-				<section>
-					<h2>Install your dependecies</h2>
-<pre><code>npm install --save name-of-dependency</code></pre>
-				</section>
-
-				<section>
-					<h2>Launch the app</h2>
-<pre><code>cd AwesomeProject
-npx react-native run-ios
-</code></pre>
-					<p>Let's explore the file system</p>
-				</section>
 
 				<section>
 					<h2>Review</h2>
